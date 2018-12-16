@@ -23,6 +23,10 @@ a {
 	text-decoration: none;
 }
 
+.site-main {
+  margin: 0;
+}
+
 .main-navigation {
 	font-weight: 700;
 	color: white;
@@ -77,16 +81,6 @@ a {
 	list-style: none;
 }
 
-.left-banner > h2 {
-	font-size: 35px;
-	line-height: 41px;
-}
-
-.right-banner > h2 {
-	font-size: 35px;
-	line-height: 41px;
-}
-
 .hit-items {
 	font-size: 16px;
 }
@@ -124,27 +118,41 @@ a {
 	color: #323232;
 }
 
+.news-banner p {
+  color: #323232;
+  margin-top: 30px;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
 .subscribing-banner p {
 	line-height: 22px;
 	color: #5a5a5a;
 }
 
+.footer-contacts a,
+.footer-copyright b,
+.footer-copyright a {
+  font-size: 13px;
+  line-height: 18px;
+}
+
 /*сетка*/
 
 .page-wrapper {
-  position: relative;
-  width: 100%;
-  height: auto;
+	position: relative;
+	width: 100%;
+	height: auto;
 
-  background-repeat: no-repeat;
-  background-position: top center;
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 
 .content-wrapper {
-  min-width: 900px;
-  max-width: 1200px;
-  margin: 0 auto;
-
+	min-width: 900px;
+	max-width: 1200px;
+	margin: 0 auto;
+  padding-left: 8px;
 }
 
 .main-header {
@@ -225,4 +233,213 @@ a {
 
 .slider-toggle {
 	margin-top: -50px;
+}
+
+/**/
+
+.banner-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.banner-items li h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.banner-items li p {
+  margin: 0;
+  padding: 0;
+}
+
+.banner-items li:first-child {
+  width: 560px;
+  height: 229px;
+  background: url(../img/raspberries.png) no-repeat;
+}
+
+.banner-items li h2 {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.banner-items li p {
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
+.banner-btn {
+  display: inline-block;
+  padding-top: 60px;
+  padding-left: 395px;
+}
+
+.banner-items li:last-child {
+  width: 560px;
+  height: 229px;
+  background: url(../img/chocolate.png) no-repeat;
+}
+
+.banners ul {
+  list-style: none;
+}
+
+/**/
+
+.hit-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hit-items div h3,
+.hit-items div p {
+  margin: 0;
+  padding: 0;
+}
+
+.hit-items div {
+  width: 267px;
+}
+
+/**/
+
+.features {
+  margin-right: 0;
+}
+
+.features-describe {
+  padding-top: 30px;
+  padding-left: 20px;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.features-top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-top-container p {
+  margin: 0;
+  padding: 0 60px;
+}
+
+.features-bottom-container p {
+  margin: 0;
+  padding: 0 60px;
+}
+
+.features p {
+  display: inline-block;
+  margin-top: 25px;
+  width: 500px;
+}
+
+/**/
+.news-banner {
+  margin: 0;
+  padding: 0;
+}
+
+.news-banner ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.news-banner li:first-child {
+  list-style: none;
+  background: url(../img/news-banner.png) no-repeat;
+  width: 560px;
+  height: 220px;
+}
+
+.news-banner li:last-child {
+  list-style: none;
+  background: url(../img/subs-banner.png) no-repeat;
+  width: 560px;
+  height: 220px;
+}
+
+
+.news-banner li a {
+  display: inline-block;
+  margin-top: 15px;
+  width: 290px;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.news-banner li form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.news-banner li input {
+  margin-left: 40px;
+  display: inline-block;
+  width: 65%;
+}
+
+.news-banner li label {
+  color: #5a5a5a;
+  margin-right: 40px;
+}
+
+/**/
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+}
+
+.footer-social div {
+  width: 300px;
+}
+
+.footer-social ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-left: 27px;
+}
+
+.footer-social li {
+  list-style: none;
+  padding-right: 10px;
+  padding-top: 40px;
+}
+
+.footer-contacts-container {
+  display: flex;
+  width: 330px;
+}
+
+.footer-copyright {
+  width: 200px;
+  margin: 0;
+}
+
+.footer-copyright-container img,
+.footer-copyright-container b,
+.footer-copyright-container a {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-copyright-container {
+  padding-top: 20px;
 }
