@@ -2,27 +2,30 @@
 <html>
 <head>
 	<title>Глейси</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 
-<div class="page-wrapper">
+<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked="">
+<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+<input class="visually-hidden" type="radio" id="product-3" name="toggle">
 	<div class="content-wrapper">
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a href="#"><img src="img/logo.png" width="154" height="64" alt="logo"></a>
 			<ul class="site-navigation">
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Доставка и оплата</a></li>
-				<li><a href="#">О Компании</a></li>
+				<li><a class="nav-a" href="#">Каталог</a></li>
+				<li><a class="nav-a" href="#">Доставка и оплата</a></li>
+				<li><a class="nav-a" href="#">О Компании</a></li>
 			</ul>
 
 			<ul class="user-navigation">
-				<li><a href="#">Поиск</a></li>
-				<li><a href="#">Вход</a></li>
-				<li><a href="#">Пусто</a></li>
+				<li><a class="nav-a" href="#">Поиск</a></li>
+				<li><a class="nav-a" href="#">Вход</a></li>
+				<li><a class="nav-a" href="#">Пусто</a></li>
 			</ul>
 		</nav>
 		<div class="header-info">
@@ -35,39 +38,39 @@
 			</strong>
 		</p>
 </div>
-	</header>
-</div>
-</div>
 
-<div class="page-wrapper">
-	<div class="content-wrapper">
-	<main class="site-main">
-		<div class="slider">
-
-<div class="title-container">
-		<h1 class="header-title">Крем-брюле и пломбир с малиновым джемом</h1>
-		<a class="btn top-button" href="#">Давайте оба!</a>
-		</div>
-
-						<ul class="slider-toggle">
-			<li class="slide-radio">
-				<button class="slide-btn">
-					Первый слайд
-				</button>
+<div class="slider">
+	<div class="slider-controls">
+		<label for="product-1">Первый</label>
+		<label for="product-2">Второй</label>
+		<label for="product-3">Третий</label>
+	</div>
+						<ul class="slider-list">
+			<li class="slider-item slide" id="slide1">
+				<h1 class="slider-title">
+				Крем-брюле и пломбир с малиновым джемом
+			</h1>
+				<a href="#" class="header-button slide-button">Давайте оба!</a>
 			</li>
-			<li class="slide-radio">
-				<button class="slide-btn">
-					Второй слайд
-				</button>
+			<li class="slider-item slide" id="slide2">
+				<h1 class="slider-title">
+				Шоколадный пломбир и лимонный сорбет
+			</h1>
+				<a href="#" class="header-button slide-button">Давайте оба!</a>
 			</li>
-			<li class="slide-radio">
-				<button class="slide-btn">
-					Третий слайд
-				</button>
+			<li class="slider-item slide" id="slide3">
+				<h1 class="slider-title">
+				Пломбир с помадкой и клубичный цербет
+			</h1>
+				<a href="#" class="header-button slide-button">Давайте оба!</a>
 			</li>
 		</ul>
 	</div>
+</header>
 
+
+	<div class="content-wrapper">
+	<main class="site-main">
 		<section class="banners">
 			<ul class="banner-items">
 				<li>
@@ -76,7 +79,9 @@
 				При покукпке 2 кг любого фруктового мороженого, добавим в вашм заказ 
 			банку малинового варенья бесплатно.
 		</p>
+		<div class="banner-positioner first-banner-pos">
 		<a class="banner-btn btn" href="#">Хочу варенье!</a>
+	</div>
 		</li>
 		<li>
 			<h2>Шоколадки даром!</h2>
@@ -84,7 +89,9 @@
 				При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей 
 			шоколадной присыпки совершенно бесплатно.
 		</p>
+		<div class="banner-positioner second-banner-pos">
 		<a href="#" class="banner-btn btn">Хочу шоколадки!</a>
+	</div>
 		</li>
 	</ul>
 		</section>
@@ -96,7 +103,7 @@
 					310 Р<span class="kg">/кг</span>
 				</h3> 
 				<p>
-					Сливочное с апельсиновым джемом и цитрусовой стружкой
+					<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 				</p>
 			</div>
 			<div>
@@ -105,7 +112,7 @@
 					380 Р<span class="kg">/кг</span>
 				</h3>
 				<p>
-					Сливочно-кофейное с кусочками шоколада
+					<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 				</p>
 			</div>
 			<div>
@@ -114,7 +121,7 @@
 					355 Р<span class="kg">/кг</span>
 				</h3>
 				<p>
-					Сливочно-клубничное с присыпкой из белого шоколада
+					<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 				</p>
 			</div>
 				<div>
@@ -123,7 +130,7 @@
 					415 Р<span class="kg">/кг</span>
 				</h3>
 				<p>
-					Сливочное крем-брюле с карамельной подливкой
+					<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 				</p>
 			</div>
 		</section>
@@ -174,10 +181,8 @@
 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
 			</p>
 					<form>
-				<input type="email" name="mail" class="btn mail" id="mail-id">
-				<label for="mail-id">
-					Отправить
-				</label>
+				<input type="email" name="mail" class="mail" id="mail-id" value="Электронная почта">
+				<button type="submit" class="btn">Отправить</button>
 			</form>
 				</li>
 			</ul>
@@ -185,7 +190,7 @@
 	</main>
 
 	<div class="map">
-		<img src="img/map.png">
+		<img src="img/map.png" width="1146">
 	</div>
 
 	<footer class="main-footer">
@@ -207,24 +212,32 @@
 </div>
 
 <div class="footer-contacts-container">
-<p class="footer-contacts">
-		<a href="#"><b>Для поставщиков</b></a>
+<ul class="footer-contacts">
+	<li>
+		<a href="#">Для поставщиков</a>
+	</li>
+	<li>
 		<a href="#">О производстве</a>
-	</p>
-<p class="footer-contacts">
+	</li>
+</ul>
+<ul class="footer-contacts">
+	<li>
 	  <a href="#">Наши документы</a>
+	</li>
+	<li>
 		<a href="#">Экологические стандарты</a>
-	</p>
+	</li>
+	</ul>
 </div>
+
 <div class="footer-copyright-container">
 <img src="img/htmlacademy-logo.png" width="108" height="39">
 <p class="footer-copyright">
             <b>Разработано:</b>
-            <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+            <a href="https://htmlacademy.ru">HTML Academy</a>
         </p>
 </div>
 	</footer>
 	</div>
-</div>
 </body>
 </html>
