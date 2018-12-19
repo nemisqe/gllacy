@@ -36,8 +36,21 @@
 		</div>
 
 			 <ul class="user-navigation">
-				<li><a class="nav-a page-header-search-btn" href="#"></a></li>
-				<li><a class="nav-a page-header-login-btn" href="#">Вход</a></li>
+				<li>
+					<a class="nav-a page-header-search-btn" href="#"><div class="page-header__popup-wrap  page-header__popup-wrap--extra-space">
+            <form class="page-header__search-form" id="search-form" action="/" method="get">
+              <input type="text" name="search-query" placeholder="Что ищем?">
+            </form>
+          </div></a>
+
+				</li>
+				<li>
+					<a class="nav-a page-header-login-btn" href="#">
+						Вход
+
+					</a>
+					
+				</li>
 				<li><a class="nav-a page-header-basket-btn" href="#">Пусто</a></li>
 			</ul>
 

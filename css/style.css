@@ -157,11 +157,13 @@ a {
 .main-navigation {
 	font-weight: 700;
 	color: #ffffff;
+  position: relative;
 }
 
 .user-navigation {
 	font-size: 14px;
 	line-height: 16px;
+  position: relative;
 }
 
 .site-navigation {
@@ -171,6 +173,7 @@ a {
 
 .user-navigation a {
   text-decoration: none;
+
 }
 
 .site-navigation,
@@ -614,6 +617,7 @@ a {
 
 
 
+
 .user-navigation .page-header-basket-btn {
   padding: 8px 33px;
   padding-right: 34px;
@@ -650,6 +654,7 @@ a {
 
 .page-header-login-btn {
   display: inline-block;
+  color: #323232;
   padding-left: 5px;
 }
 
@@ -798,6 +803,7 @@ textarea:hover {
 
 .catalog-popup li:not(.title):hover {
     background-color: #fbded8;
+    width: 100%;
     cursor: pointer;
 }
 
@@ -823,3 +829,52 @@ textarea:hover {
 .main-nav__item:hover .catalog-popup-wrapper {
     visibility: visible;
 }
+
+
+
+
+.page-header__search-form {
+  padding: 20px 15px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  cursor: default;
+}
+
+.page-header__search-form input[type=text] {
+  min-width: 312px;
+}
+
+.page-header__btn:hover {
+    color: #323232;
+    background-color: #f8f7f4;
+}
+
+
+
+input[type=email], input[type=password], input[type=text], textarea {
+    box-sizing: border-box;
+    padding: 9px 15px;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    outline: none;
+}
+
+.page-header__popup-wrap {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  padding-top: 5px;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.user-navigation li:first-child:hover .page-header__popup-wrap,
+.user-navigation li:nth-of-type(2) .page-header__popup-wrap {
+    visibility: visible;
+}
+
